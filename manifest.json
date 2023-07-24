@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "colorExtension",
+    "version": "1.0",
+    "description": "Add a custom background to Google.com",
+    "author": "Natasha Akali",
+    "icons":{
+        "16": "/images/JOG_16.png",
+        "48": "/images/JOG_48.png",
+        "128": "/images/JOG_128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/JOG_16.png",
+            "48": "/images/JOG_48.png",
+            "128": "/images/JOG_128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"]
+    }]
+}
